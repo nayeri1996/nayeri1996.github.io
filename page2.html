@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>بازار ماهی</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+     
+ <link rel="stylesheet" type="text/css" href="CSS.css">
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+
+<div class="header22">
+  <h1>بازار ماهی</h1>
+  
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <nav class="sidebar">
+            <div class="text">Side Menu</div>
+            <ul>
+                <li><a href="#">ساختار</a></li>
+                <li>
+                    <a href="#" class="feat-btn">فرآیند ها
+                        <span class="fas fa-caret-down first"></span>
+                    </a>
+                    <ul class="feat-show">
+                        <li><a href="#">فرآیند1</a></li>
+                        <li><a href="#">فرآیند2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="serv-btn">مدلسازی
+                        <span class="fas fa-caret-down second"></span>
+
+                    </a>
+                    <ul class="serv-show">
+                        <li><a href="#">BPMN</a></li>
+                        <li><a href="#">Web Design</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+    
+  </div>
+
+  <div class="col-6 col-s-9  ce">
+    <h1>محصولات ویژه</h1>
+    <p><img src="download.jpg" alt="عمده و جزئی"> <img src="خواص-ماهی-کپور.jpg" alt="عمده و جزئی"> </p>
+  </div>
+
+  
+</div>
+
+<div class="footer">
+  <p>راه های ارتباطی</p>
+  <p>mohadese.mokhtari007@gmail.com</p>
+</div>
+<script>
+           
+  $('.feat-btn').click(function(){
+      $('nav ul .feat-show').toggleClass("show");
+      $('nav ul .first').toggleClass("rotate");
+
+  });
+  $('.serv-btn').click(function(){
+      $('nav ul .serv-show').toggleClass("show1");
+      $('nav ul .second').toggleClass("rotate");
+  });
+  $('nav ul li').click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+  });
+</script>
+</body>
+</html>
