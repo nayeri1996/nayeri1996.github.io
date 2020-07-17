@@ -148,7 +148,7 @@ label #cancel{
 section{
     background: url(bg1.jpeg) no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% auto;;
     height: 719px;
     transition: all .5s;
 }
